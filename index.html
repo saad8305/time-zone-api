@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ساعت جهانی — پیشرفته</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ساعت جهانی 🌍</h1>
+      <div class="theme-toggle" id="themeToggle">🌙</div>
+    </header>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="جستجوی شهر یا کشور..." />
+    </div>
+    <div class="timezone-list" id="timezoneList">
+    </div>
+    <div class="clocks-container" id="clocksContainer">
+    </div>
+    <div id="map"></div>
+    <div class="map-hint">💡 روی هر نقطه از نقشه کلیک کنید تا نزدیک‌ترین شهر اضافه شود</div>
+
+    <footer>Using TimeZoneDB API key</footer>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
